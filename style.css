@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    max-width: 100%;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.main-container { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.app-container{
+    width: 40%;
+    background-color: #d9d9d9;
+    margin-top: 60px;
+    height: calc(100vh - 60px);
+    overflow: hidden;
+}
+
+.app-container h1 {
+   text-align: center; 
+   margin: 10px 0;
+   font-size: x-large;
+}
+
+.app-container input {
+    border:none;
+    background-color: #eee;
+    padding: 8px;
+    margin: 15px 0px;
+}
+
+.app-container button{
+    background-color:transparent;
+    border:none;
+    border:1px solid black;
+    padding: 0 20px;
+    border-radius: 30px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.favorite-meal h2 {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.favorite-meal {
+    background-color:#ebebeb;
+    padding: 10px 0px;
+}
+
+.favorite-meal ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.favorite-meal ul li {
+    list-style: none;
+}
+
+.favorite-meal ul li img {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+}
+
+.favorite-meal ul li span {
+    text-align: center;
+    padding-left: 10px;
+}
+
+.random-recipe { 
+    padding: 0 20px;
+    margin: 20px 0px;
+    display: block;
+}
+
+.radom-meal-container  {
+    padding: 0 20px;
+}
+
+.radom-meal-container span {
+    margin:20px 0;
+    display: block;
+}
+
+.meal-info {
+    padding: 0 20px;
+    margin: 20px 0px;
+}
+
+.meal-info button {
+    margin: 10px 0px;
+}
