@@ -26,7 +26,7 @@ img {
     width: 40%;
     background-color: #d9d9d9;
     margin-top: 60px;
-    height: calc(100vh - 60px);
+    height: calc(80vh - 60px);
     overflow: hidden;
 }
 
@@ -55,37 +55,6 @@ img {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-}
-
-.favorite-meal h2 {
-    text-align: center;
-    margin: 15px 0;
-}
-
-.favorite-meal {
-    background-color:#ebebeb;
-    padding: 10px 0px;
-}
-
-.favorite-meal ul {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.favorite-meal ul li {
-    list-style: none;
-}
-
-.favorite-meal ul li img {
-    border-radius: 50%;
-    height: 70px;
-    width: 70px;
-}
-
-.favorite-meal ul li span {
-    text-align: center;
-    padding-left: 10px;
 }
 
 .random-recipe { 
