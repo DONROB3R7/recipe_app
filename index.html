@@ -10,21 +10,23 @@
 <body>
     <div class="main-container">
         <div class="app-container">
-            <h1>Recippe App</h1>
+            <h1>Recipe App</h1>
 
             <div class="search-container">
-                <input type="text">
+                <input type="text" id="inputSearch">
                 <button id="search">Search</button>
             </div>
-
-        <span class="random-recipe">Random Recipe</span>
-            <div class="meal-container">
-                <img src="https:\/\/www.themealdb.com\/images\/media\/meals\/xqwwpy1483908697.jpg" alt="">
-            <div class="meal-info">
-                <h4>Veggie Veggie</h4>
-                <button>Like</button>  
+            <div class="category-container">
+                <button  class="btn-new" onclick="randomMealRender()">New Random Recipe</button>  
+                <span id="category">Vegetarian</span>
             </div>
-            </div>
+        
+        <div id="wrapper-meal">
+           
+            <div id="meal-container"></div>
+            <div id="instruction-container"></div>
+            <button  id="showContent">Show more</button>
+        </div>
     </div>
     <script src="./app.js"></script>
 </body>

@@ -1,3 +1,5 @@
+/* General Css Rules */
+
 *{
     margin: 0px;
     padding: 0px;
@@ -7,10 +9,9 @@ body {
     max-width: 100%;
 }
 
-
 img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -18,15 +19,15 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
 }
 
 
-.app-container{
+/* App container */
+.app-container {
     width: 40%;
     background-color: #d9d9d9;
     margin-top: 60px;
-    height: calc(80vh - 60px);
+    padding-bottom: 30px;
     overflow: hidden;
 }
 
@@ -36,47 +37,79 @@ img {
    font-size: x-large;
 }
 
-.app-container input {
+/* App container search section */
+.app-container  .search-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.app-container .search-container input {
     border:none;
     background-color: #eee;
     padding: 8px;
     margin: 15px 0px;
 }
 
-.app-container button{
+.app-container .search-container button{
     background-color:transparent;
     border:none;
     border:1px solid black;
-    padding: 0 20px;
-    border-radius: 30px;
+    padding: 0 30px;
+    border-radius: 15px;
 }
 
-.search-container {
+.app-container button.btn-new{
+    margin: 10px 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/*  Category section */
+
+.category-container {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
 }
 
-.random-recipe { 
-    padding: 0 20px;
-    margin: 20px 0px;
-    display: block;
+.category-container span {
+    margin: 20px 15px;
 }
 
-.radom-meal-container  {
-    padding: 0 20px;
+
+/* Meal Section */
+
+#wrapper-meal #meal-container h3{
+    padding:20px 10px;
 }
 
-.radom-meal-container span {
-    margin:20px 0;
-    display: block;
-}
 
-.meal-info {
-    padding: 0 20px;
-    margin: 20px 0px;
-}
-
-.meal-info button {
+#wrapper-meal #meal-container .meal-info {
+    padding: 0 10px;
     margin: 10px 0px;
+}
+
+#wrapper-meal #instruction-container p {
+    padding:10px;
+}
+
+#wrapper-meal #instruction-container span {
+    padding:10px;
+}
+
+/* Javascript Css */
+#instruction-container {
+    display:none;
+}
+
+#instruction-container.show {
+    display: block;
+}
+
+#instruction-container.show button{
+    display:none;
+}
+
+#showContent {
+    margin:10px;
 }
